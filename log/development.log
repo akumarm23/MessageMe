@@ -6246,3 +6246,256 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 36ms (Views: 22.7ms | ActiveRecord: 9.4ms | Allocations: 9118)
 
 
+Started GET "/" for 127.0.0.1 at 2025-01-20 15:53:19 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/home/index.html.erb:12
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  Rendered collection of messages/_message.html.erb [4 times] (Duration: 6.3ms | Allocations: 4662)
+  Rendered home/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 6455)
+  Rendered layouts/_nav.html.erb (Duration: 0.5ms | Allocations: 360)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 106.3ms | Allocations: 59675)
+Completed 200 OK in 160ms (Views: 109.1ms | ActiveRecord: 2.3ms | Allocations: 85052)
+
+
+Started GET "/" for 127.0.0.1 at 2025-01-20 15:53:30 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/home/index.html.erb:12
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  Rendered collection of messages/_message.html.erb [4 times] (Duration: 2.7ms | Allocations: 3527)
+  Rendered home/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 4738)
+  Rendered layouts/_nav.html.erb (Duration: 0.6ms | Allocations: 334)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 26760)
+Completed 200 OK in 33ms (Views: 21.4ms | ActiveRecord: 2.2ms | Allocations: 36452)
+
+
+Started POST "/message" for 127.0.0.1 at 2025-01-20 15:53:31 -0500
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+Started POST "/message" for 127.0.0.1 at 2025-01-20 15:53:38 -0500
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+Started POST "/message" for 127.0.0.1 at 2025-01-20 15:58:43 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/ashwinkumarmuniswamy/Desktop/Ruby7/MessageMe/app/controllers/messages_controller.rb:17: syntax error, unexpected end-of-input):
+  
+app/controllers/messages_controller.rb:17: syntax error, unexpected end-of-input
+Started GET "/" for 127.0.0.1 at 2025-01-20 15:58:53 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/home/index.html.erb:12
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2020)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 2124)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 3.6ms | Allocations: 24051)
+
+
+  
+ActionView::Template::Error (Missing partial messages/_message with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/ashwinkumarmuniswamy/Desktop/Ruby7/MessageMe/app/views"
+  * "/Users/ashwinkumarmuniswamy/.rvm/gems/ruby-3.2.2/gems/turbo-rails-2.0.11/app/views"
+  * "/Users/ashwinkumarmuniswamy/.rvm/gems/ruby-3.2.2/gems/semantic-ui-sass-2.4.4.0/app/views"
+  * "/Users/ashwinkumarmuniswamy/.rvm/gems/ruby-3.2.2/gems/actiontext-7.1.5.1/app/views"
+  * "/Users/ashwinkumarmuniswamy/.rvm/gems/ruby-3.2.2/gems/actionmailbox-7.1.5.1/app/views"
+):
+     9:         <div class="ui fluid raised card chatbox">
+    10:             <div class="content">
+    11:                 <div class="ui feed">
+    12:                     <%= render @messages %>
+    13:                 </div>
+    14:             </div>
+    15: 
+  
+app/views/home/index.html.erb:12
+Started GET "/" for 127.0.0.1 at 2025-01-20 16:03:54 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/home/index.html.erb:12
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  Rendered collection of messages/_message.html.erb [4 times] (Duration: 8.7ms | Allocations: 4649)
+  Rendered home/index.html.erb within layouts/application (Duration: 15.3ms | Allocations: 6216)
+  Rendered layouts/_nav.html.erb (Duration: 0.5ms | Allocations: 360)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 125.9ms | Allocations: 59479)
+Completed 200 OK in 148ms (Views: 127.3ms | ActiveRecord: 7.0ms | Allocations: 69213)
+
+
+Started POST "/message" for 127.0.0.1 at 2025-01-20 16:04:07 -0500
+  
+SyntaxError (/Users/ashwinkumarmuniswamy/Desktop/Ruby7/MessageMe/app/controllers/messages_controller.rb:17: syntax error, unexpected end-of-input):
+  
+app/controllers/messages_controller.rb:17: syntax error, unexpected end-of-input
+Started POST "/message" for 127.0.0.1 at 2025-01-20 16:05:23 -0500
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"body"=>"new test msg"}, "button"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mMessage Create (1.3ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["body", "new test msg"], ["user_id", 1], ["created_at", "2025-01-20 21:05:23.731920"], ["updated_at", "2025-01-20 21:05:23.731920"]]
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 31ms (ActiveRecord: 4.4ms | Allocations: 15153)
+
+
+Started GET "/" for 127.0.0.1 at 2025-01-20 16:05:23 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/home/index.html.erb:12
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 3.3ms | Allocations: 3447)
+  Rendered home/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 4651)
+  Rendered layouts/_nav.html.erb (Duration: 0.5ms | Allocations: 336)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 26712)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.2ms | Allocations: 28360)
+
+
+Started POST "/message" for 127.0.0.1 at 2025-01-20 16:05:28 -0500
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"body"=>"test"}, "button"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mMessage Create (1.2ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["body", "test"], ["user_id", 1], ["created_at", "2025-01-20 21:05:28.500963"], ["updated_at", "2025-01-20 21:05:28.500963"]]
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 7ms (ActiveRecord: 1.6ms | Allocations: 2462)
+
+
+Started GET "/" for 127.0.0.1 at 2025-01-20 16:05:28 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/home/index.html.erb:12
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  Rendered collection of messages/_message.html.erb [6 times] (Duration: 3.2ms | Allocations: 2819)
+  Rendered home/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3561)
+  Rendered layouts/_nav.html.erb (Duration: 0.1ms | Allocations: 63)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 9300)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.1ms | Allocations: 10219)
+
+
+Started POST "/message" for 127.0.0.1 at 2025-01-20 16:06:27 -0500
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"body"=>"askfj"}, "button"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mMessage Create (1.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["body", "askfj"], ["user_id", 1], ["created_at", "2025-01-20 21:06:27.972279"], ["updated_at", "2025-01-20 21:06:27.972279"]]
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 10ms (ActiveRecord: 1.9ms | Allocations: 2477)
+
+
+Started GET "/" for 127.0.0.1 at 2025-01-20 16:06:27 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/home/index.html.erb:12
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  Rendered collection of messages/_message.html.erb [7 times] (Duration: 9.7ms | Allocations: 3277)
+  Rendered home/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 4029)
+  Rendered layouts/_nav.html.erb (Duration: 0.6ms | Allocations: 63)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 9747)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.2ms | Allocations: 10652)
+
+
