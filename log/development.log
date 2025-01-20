@@ -5800,3 +5800,90 @@ Processing by LoginController#new as HTML
 Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 6486)
 
 
+Started GET "/login" for 127.0.0.1 at 2025-01-20 15:32:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 2744)
+  Rendered layouts/_nav.html.erb (Duration: 0.5ms | Allocations: 375)
+  Rendered layouts/_messages.html.erb (Duration: 0.5ms | Allocations: 204)
+  Rendered layout layouts/application.html.erb (Duration: 139.4ms | Allocations: 68526)
+Completed 200 OK in 149ms (Views: 142.4ms | ActiveRecord: 0.0ms | Allocations: 72638)
+
+
+Started POST "/login" for 127.0.0.1 at 2025-01-20 15:32:35 -0500
+Processing by LoginController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"Ash", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Ash"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 285)
+  Rendered layouts/_nav.html.erb (Duration: 0.1ms | Allocations: 75)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 6008)
+Completed 200 OK in 464ms (Views: 5.8ms | ActiveRecord: 2.3ms | Allocations: 21419)
+
+
+Started POST "/login" for 127.0.0.1 at 2025-01-20 15:35:35 -0500
+Processing by LoginController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"Ash", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Ash"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 616)
+  Rendered layouts/_nav.html.erb (Duration: 0.4ms | Allocations: 346)
+  Rendered layouts/_messages.html.erb (Duration: 0.4ms | Allocations: 175)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 22615)
+Completed 200 OK in 464ms (Views: 25.0ms | ActiveRecord: 6.8ms | Allocations: 28558)
+
+
+Started POST "/login" for 127.0.0.1 at 2025-01-20 15:35:42 -0500
+Processing by LoginController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"Ash", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Ash"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 285)
+  Rendered layouts/_nav.html.erb (Duration: 0.1ms | Allocations: 75)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 6006)
+Completed 200 OK in 447ms (Views: 5.5ms | ActiveRecord: 0.1ms | Allocations: 7021)
+
+
+Started POST "/login" for 127.0.0.1 at 2025-01-20 15:35:49 -0500
+Processing by LoginController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"Ash", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Ash"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:8:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 439ms (ActiveRecord: 0.2ms | Allocations: 931)
+
+
+Started GET "/" for 127.0.0.1 at 2025-01-20 15:35:49 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/home/index.html.erb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:4
+  Rendered collection of messages/_message.html.erb [4 times] (Duration: 8.1ms | Allocations: 4768)
+  Rendered home/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 9403)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layouts/_nav.html.erb (Duration: 0.9ms | Allocations: 1061)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 16452)
+Completed 200 OK in 23ms (Views: 18.7ms | ActiveRecord: 0.6ms | Allocations: 17929)
+
+
